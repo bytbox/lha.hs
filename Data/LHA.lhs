@@ -134,3 +134,17 @@
 >   | DocumentationOnly     -- ^ Corresponds to status code +3.
 >   | IncomingBeam          -- ^ Corresponds to status code -9.
 
+> statusToInt Incoming = (-1)
+> statusToInt OutgoingFinal = (1)
+> statusToInt IntermediateSpaceLike = (-2)
+> statusToInt IntermediateResonance = (2)
+> statusToInt DocumentationOnly = (3)
+> statusToInt IncomingBeam = (-9)
+
+> statusFromInt (-1) = Incoming
+> statusFromInt (1) = OutgoingFinal
+> statusFromInt (-2) = IntermediateSpaceLike
+> statusFromInt (2) = IntermediateResonance
+> statusFromInt (3) = DocumentationOnly
+> statusFromInt (-9) = IncomingBeam
+
