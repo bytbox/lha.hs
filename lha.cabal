@@ -1,5 +1,5 @@
 Name:                lha
-Version:             0.1
+Version:             0.1.1
 Synopsis:            Data structures for the Les Houches Accord
 Description:         This package provides data structures for HEP events, as outlined by the Les Houches Accord (hep-ph/0109068v1)
 Homepage:            https://github.com/bytbox/lha.hs
