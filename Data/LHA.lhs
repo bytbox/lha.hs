@@ -106,7 +106,7 @@
 
 ^ Status code of the particle.
 
->   , mothers   :: (Int, Maybe Int)
+>   , mothers   :: MaybePair Int
 
 ^ The mother particles.
 
@@ -147,4 +147,6 @@
 > statusFromInt (2) = IntermediateResonance
 > statusFromInt (3) = DocumentationOnly
 > statusFromInt (-9) = IncomingBeam
+
+> data MaybePair a = PZero | POne a | PBoth (a, a)
 
